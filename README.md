@@ -55,3 +55,20 @@ python scripts/chat.py \
 ```
 
 The current set up works but the training is mininal and the output of llm is just nonsense when working in terminal UI. TODO: train the llm so it could have a basic conversation with a user.
+
+```bash
+minichatgpt % python scripts/chat.py \
+  --checkpoint artifacts/chat/best_model.pt \
+  --tokenizer artifacts/tokenizer.json
+MiniChatGPT terminal chat
+Type 'exit' to quit.
+
+you> Hello
+bot> �i sst fver ae ktseoe sl yoneskens ase ah tu ae a tfyl rkeninrqmd n ss inspfisiesmineiens a ie e e qe eu-n
+
+you> Not so great huh!
+bot> Athen solhsf.ie  ty o ntoodel q aeeensky k t aie kolifos codel sese kouratsho.se s a s tst tmts n kenss
+
+you> exit
+bye
+```
