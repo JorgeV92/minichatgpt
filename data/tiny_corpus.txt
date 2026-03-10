@@ -1,0 +1,4 @@
+To build a tiny language model, start from tokens and predict the next one.
+Transformers use self-attention to combine information across a sequence.
+MiniChatGPT is a small project for learning deep learning systems.
+Good engineering means readable code, tests, documentation, and reproducible experiments.

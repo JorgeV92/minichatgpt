@@ -1,3 +1,18 @@
+Metadata-Version: 2.4
+Name: minichatgpt
+Version: 0.1.0
+Summary: A small GPT-style chatbot built from scratch in Python and PyTorch
+Author: Jorge Velez
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=2.2
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: ruff>=0.6; extra == "dev"
+Provides-Extra: web
+Requires-Dist: gradio>=5.0; extra == "web"
+
 # MiniChatGPT
 
 A small, **GPT-style chatbot**.
@@ -12,12 +27,3 @@ GPT-style chatbot built from scratch in `python` and `Pytorch`
 - TODO a **chat supervised fine-tuning pipeline** on instruction-response JSONL data
 - TODO: a **terminal chat interface** for talking to the model
 <!-- - an optional **Gradio web chat UI** for a more ChatGPT-like demo -->
-
-## 1. Train a tokenizer
-
-```bash
-python scripts/train_tokenizer.py \
-  --input data/tiny_corpus.txt \
-  --output artifacts/tokenizer.json \
-  --vocab-size 320
-```

@@ -1,0 +1,4 @@
+{"user": "What is a transformer?", "assistant": "A transformer is a neural network architecture that uses self-attention to model relationships across tokens in a sequence."}
+{"user": "Why do we mask future tokens?", "assistant": "We mask future tokens so the model learns causal next-token prediction instead of peeking ahead at the answer."}
+{"user": "What does supervised fine-tuning do?", "assistant": "Supervised fine-tuning teaches the pretrained model to follow an instruction-response format by optimizing on curated user and assistant examples."}
+{"user": "What is P vs. NP?", "assistant": "P vs. NP asks whether every problem whose solution can be checked quickly can also be solved quickly. If P = NP, many hard problems in math, cryptography, and optimization would become much easier to solve."}

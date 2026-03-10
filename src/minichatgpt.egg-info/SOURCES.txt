@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+src/minichatgpt/__init__.py
+src/minichatgpt/chat.py
+src/minichatgpt/config.py
+src/minichatgpt/dataset.py
+src/minichatgpt/model.py
+src/minichatgpt/tokenizer.py
+src/minichatgpt/trainer.py
+src/minichatgpt/utils.py
+src/minichatgpt.egg-info/PKG-INFO
+src/minichatgpt.egg-info/SOURCES.txt
+src/minichatgpt.egg-info/dependency_links.txt
+src/minichatgpt.egg-info/requires.txt
+src/minichatgpt.egg-info/top_level.txt
+tests/test_model.py
+tests/test_tokenizer.py
