@@ -21,3 +21,37 @@ python scripts/train_tokenizer.py \
   --output artifacts/tokenizer.json \
   --vocab-size 320
 ```
+
+## 2. Pretrain a tiny GPT
+
+```bash
+python scripts/pretrain.py \
+  --input data/tiny_corpus.txt \
+  --tokenizer artifacts/tokenizer.json \
+  --out-dir artifacts/pretrain \
+  --epochs 20 \
+  --batch-size 8
+```
+
+## 3. Fine-tune for chat
+
+```bash
+python scripts/finetune_chat.py \
+  --data data/sample_chat.jsonl \
+  --tokenizer artifacts/tokenizer.json \
+  --checkpoint artifacts/pretrain/best_model.pt \
+  --out-dir artifacts/chat \
+  --epochs 30 \
+  --batch-size 
+```
+
+
+## 4. Chat in the terminal
+
+```bash
+python scripts/chat.py \
+  --checkpoint artifacts/chat/best_model.pt \
+  --tokenizer artifacts/tokenizer.json
+```
+
+The current set up works but the training is mininal and the output of llm is just nonsense when working in terminal UI. TODO: train the llm so it could have a basic conversation with a user.
