@@ -7,7 +7,7 @@ from pathlib import Path
 from minichatgpt.tokenizer import BytePairTokenizer
 
 
-def main() -> None:
+def main():
     parser = argparse.ArgumentParser(description="Train a byte-level BPE tokenizer.")
     parser.add_argument("--input", type=Path, required=True, help="Path to a training text file")
     parser.add_argument("--output", type=Path, required=True, help="Where to save tokenizer JSON")
